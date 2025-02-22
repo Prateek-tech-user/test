@@ -9,4 +9,4 @@ st.info("this is information")
 st.checkbox("Male")
 st.checkbox("female")
 
-st.dropdown("select any option",["maths","science","english"])
+st.selectbox("select any option",["maths","science","english"])

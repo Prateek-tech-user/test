@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
+
 df = pd.read_csv("movies.csv")
+
 st.title("This is my first website")
 
 st.header("Machine learning")

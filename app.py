@@ -17,5 +17,8 @@ st.checkbox("female")
 
 a = df["name"].to_list()
 
-st.selectbox("Select any movie",a)
-st.button("Recommend")
+selected_movie = st.selectbox("Select any movie",a)
+sd = st.button("Recommend")
+
+if sd:
+  st.write("you selected a movie",selected_movie)

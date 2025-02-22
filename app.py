@@ -12,5 +12,9 @@ st.info("this is information")
 st.checkbox("Male")
 st.checkbox("female")
 
-st.selectbox("select any option",["maths","science","english"])
-st.dataframe(df)
+#st.selectbox("select any option",["maths","science","english"])
+#st.dataframe(df)
+
+a = df["name"].to_list()
+
+st.selectbox("Select any movie",a)

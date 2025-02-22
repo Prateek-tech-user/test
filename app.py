@@ -21,14 +21,15 @@ selected_movie = st.selectbox("Select any movie",a)
 sd = st.button("Recommend")
 
 if sd:
-  st.write("you selected a movie",selected_movie)
+  #st.write("you selected a movie",selected_movie)
+  col1,col2,col3 = st.columns(3)
 
-col1,col2,col3 = st.columns(3)
+  with col1:
+    st.write("this is column one")
+  with col2:
+    st.write("this is column two")
+  with col3:
+    st.write("this is column three")
 
-with col1:
-  st.write("this is column one")
-with col2:
-  st.write("this is column two")
-with col3:
-  st.write("this is column three")
+
 
